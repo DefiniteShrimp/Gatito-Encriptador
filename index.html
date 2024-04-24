@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gatito Encriptador</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          src="./imagenes/logopersonalchico1.jpeg"
+          alt="Logo Encriptador"
+          class="logo"
+        />
+        <h1 class="titulo">Gatito Encriptador</h1>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="izquierda">
+          <textarea
+            id="textArea"
+            rows="10"
+            class="textarea"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="footer-izquierdo">
+            <span class="informacion"
+              >Solo letras minúsculas y sin acentos</span
+            >
+            <div class="botones-izq">
+              <button id="botonEncriptar" class="btn-encriptar">
+                Encriptar
+              </button>
+              <button id="botonDesencriptar" class="btn-desencriptar">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="derecha" class="derecha">
+          <img
+            id="gato"
+            src="./imagenes/message1.jpeg"
+            alt="Mensaje"
+            class="mensaje-img"
+          />
+          <textarea
+            id="mensajeFinal"
+            class="mensaje-final"
+            placeholder="Ningún mensaje fue encontrado"
+          ></textarea>
+          <p id="infoDerecha" class="info-derecha">
+            Ingresa el texto a desencriptar o encriptar
+          </p>
+          <button id="botonCopiar" class="btn-copiar oculto">Copiar</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer></footer>
+  <script src="script.js"></script>
+</html>
